@@ -79,7 +79,7 @@ namespace ConAppMethod
 {
     public class Employee
     {
-        public void Salary(int wHors, int nWDays, int projHandles, int extra)
+        public void Salary(int wHors, int nWDays, int projHandles=1, int extra=0)
         {
             int salary = wHors * nWDays * 100 + projHandles * 3000 + extra * 2000;
             Console.WriteLine($"Salary is:\tRs.{salary}");
@@ -104,7 +104,7 @@ namespace ConAppMethod
                         wh = int.Parse(Console.ReadLine());
                         Console.WriteLine("Enter working days");
                         wd = int.Parse(Console.ReadLine());
-                        emp.Salary(wh, wd, 1, 0);
+                        emp.Salary(wh, wd);
                         break;
                     }
                 case "Admin":
@@ -118,7 +118,7 @@ namespace ConAppMethod
                         wd = int.Parse(Console.ReadLine());
                         Console.WriteLine("Enter projects handle");
                         ph = int.Parse(Console.ReadLine());
-                        emp.Salary(wh, wd, ph, 0);
+                        emp.Salary(wh, wd, ph);
                         break;
                     }
                 case "Software Developer":
