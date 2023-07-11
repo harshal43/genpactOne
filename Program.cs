@@ -91,6 +91,10 @@ namespace ConAppMethod
         static void Main(string[] args)
         {
             string desig;
+            int wh;
+            int wd;
+            int ph;
+            int ex;
             Employee emp = new Employee();
             Console.WriteLine("Enter employee designation");
             desig = Console.ReadLine();
@@ -98,8 +102,6 @@ namespace ConAppMethod
             {
                 case "HR":
                     {
-                        int wh;
-                        int wd;
                         Console.WriteLine("Enter working hours");
                         wh = int.Parse(Console.ReadLine());
                         Console.WriteLine("Enter working days");
@@ -109,9 +111,6 @@ namespace ConAppMethod
                     }
                 case "Admin":
                     {
-                        int wh;
-                        int wd;
-                        int ph;
                         Console.WriteLine("Enter working hours");
                         wh = int.Parse(Console.ReadLine());
                         Console.WriteLine("Enter working days");
@@ -123,10 +122,6 @@ namespace ConAppMethod
                     }
                 case "Software Developer":
                     {
-                        int wh;
-                        int wd;
-                        int ph;
-                        int ex;
                         Console.WriteLine("Enter working hours");
                         wh = int.Parse(Console.ReadLine());
                         Console.WriteLine("Enter working days");
